@@ -25,6 +25,86 @@ POST /conversation
 | translateFromTo | Tuple[str, str] | Language code of the original conversation and language code to translate it to | FALSE |
 | translateToSpeakers | List[Tuple[str, str]] | Speakers whose voices are going to be translated into another language | FALSE |
 
+
+# LIST OF BARK VOICES
+
+https://suno-ai.notion.site/8b8e8749ed514b0cbf3f699013548683?v=bc67cff786b04b50b3ceb756fd05f68c
+
+# Sample structures
+
+<details>
+    <summary>Sample JSON structure (no translation)</summary> 
+
+    ```
+    {
+        "bark_model": "suno/bark-small",
+        "speakers": [
+            ["Alex", "v2/en_speaker_1"],
+            ["Luis", "v2/en_speaker_2"]
+        ],
+        "messages": [
+            {
+                "speaker": "Alex",
+                "message": "Hey, Luis. How are you?"
+            },
+            {
+                "speaker": "Luis",
+                "message": "Fine, thanks. How about you?"
+            },
+            {
+                "speaker": "Alex",
+                "message": "Doing good."
+            },
+            {
+                "speaker": "Luis",
+                "message": "Glad to hear it."
+            }
+        ]
+    }
+    ```
+
+</details>
+
+<details>
+    <summary>Sample JSON structure (translation)</summary> 
+
+    ```
+    {
+        "bark_model": "suno/bark-small",
+        "speakers": [
+            ["Alex", "v2/en_speaker_1"],
+            ["Luis", "v2/en_speaker_2"]
+        ],
+        "translateFromTo": ["en", "fr"],
+        "translateToSpeakers": [
+            ["Alex", "v2/fr_speaker_1"],
+            ["Luis", "v2/fr_speaker_2"]
+        ]
+        "messages": [
+            {
+                "speaker": "Alex",
+                "message": "Hey, Luis. How are you?"
+            },
+            {
+                "speaker": "Luis",
+                "message": "Fine, thanks. How about you?"
+            },
+            {
+                "speaker": "Alex",
+                "message": "Doing good."
+            },
+            {
+                "speaker": "Luis",
+                "message": "Glad to hear it."
+            }
+        ]
+    }
+    ```
+
+</details>
+
+
+
 # What it does
 
 It creates audio conversations based on a JSON data format.
