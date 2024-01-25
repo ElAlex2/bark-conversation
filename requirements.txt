@@ -1,0 +1,10 @@
+transformers
+accelerate
+scipy
+fastapi
+uvicorn
+torch==2.0.1+cu117
+numpy
+aiohttp
+optimum
+python-dotenv

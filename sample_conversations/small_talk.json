@@ -1,0 +1,25 @@
+{
+    "bark_model": "suno/bark-small",
+    "speakers": [
+        ["Alex", "v2/en_speaker_1"],
+        ["Luis", "v2/en_speaker_2"]
+    ],
+    "messages": [
+        {
+            "speaker": "Alex",
+            "message": "Hey, Luis. How are you?"
+        },
+        {
+            "speaker": "Luis",
+            "message": "Fine, thanks. How about you?"
+        },
+        {
+            "speaker": "Alex",
+            "message": "Doing good."
+        },
+        {
+            "speaker": "Luis",
+            "message": "Glad to hear it."
+        }
+    ]
+}

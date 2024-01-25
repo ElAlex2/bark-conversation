@@ -1,0 +1,9 @@
+name: bark
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip=22.2.2
+  - pip:
+    - --extra-index-url https://download.pytorch.org/whl/cu117
+    - -r requirements.txt
