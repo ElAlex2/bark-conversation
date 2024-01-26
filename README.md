@@ -226,7 +226,7 @@ There are some other languages in the /wavs/ folder, all from the same conversat
 
 # Efficiency and timing
 
-Bark is neither the fastest model nor the most accurate, but it's 100% free to use. Models WILL improve, and so this little tool can be useful.
+Bark is a great model, and it's 100% free to use. Models WILL improve in time, and so this little tool can be useful.
 
 With my pathetic 3070 8GB NIVIA GPU (i will replace it soon), the small model (suno/bark-small) it takes between 6-7.5 minutes to create a 210 seconds conversation audio file (more than double the time)
 
